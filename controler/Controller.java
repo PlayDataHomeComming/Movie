@@ -1,6 +1,7 @@
 package controler;
 
 
+import java.util.List;
 import java.util.Scanner;
 
 //입력받은거 실행하는 컨트롤러
@@ -33,9 +34,12 @@ public class Controller {
         }
     }
     public static void insert(){
+        List<Integer>
 
     }
 
+
+    }
 
 
 
