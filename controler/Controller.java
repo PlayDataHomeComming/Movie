@@ -33,7 +33,10 @@ public class Controller {
         }
     }
     public static void insert(){
+        String name="이름";
+        for(int i=0;i<50;i++){
 
+        }
     }
 
 
