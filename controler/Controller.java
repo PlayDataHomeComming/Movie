@@ -1,12 +1,12 @@
 package controler;
-
-
+import repository.Repository;
 import java.util.Scanner;
 
 //입력받은거 실행하는 컨트롤러
 public class Controller {
-    Scanner sc=new Scanner(System.in);
 
+    Scanner sc=new Scanner(System.in);
+    static Repository rp=new Repository();
     public  void selectMode(){
         while (true) {
             System.out.println("1.사람 입력 2. 랜덤추출 3.불참제거 4.경품 랜덤 지급");
@@ -35,7 +35,8 @@ public class Controller {
     public static void insert(){
         String name="이름";
         for(int i=0;i<50;i++){
-
+            String new_name=name+i;
+            rp.insertUsers(new_name);
         }
     }
 
